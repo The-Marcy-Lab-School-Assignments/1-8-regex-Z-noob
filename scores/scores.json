@@ -1,7 +1,32 @@
 {
+  "testScores": {
+    "Debug Tests": {
+      "DeTe1": 1
+    },
+    "From Scratch Tests": {
+      "FrScTe1": 1,
+      "FrScTe2": 1,
+      "FrScTe3": 1,
+      "FrScTe4": 1,
+      "FrScTe5": 1,
+      "FrScTe6": 1,
+      "FrScTe7": 1,
+      "FrScTe8": 1,
+      "FrScTe9": 1,
+      "FrScTe10": 1,
+      "FrScTe11": 1,
+      "FrScTe12": 1,
+      "FrScTe13": 1,
+      "FrScTe14": 1,
+      "FrScTe15": 1,
+      "FrScTe16": 1
+    },
+    "Modify Tests": {
+      "MoTe1": 1
+    }
+  },
   "idToTestNameHash": {
     "DeTe1": "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username",
-    "MoTe1": "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each",
     "FrScTe1": "From Scratch Tests helloWorldRegex - if the string contains \"hello world\" regardless of case it returns true",
     "FrScTe2": "From Scratch Tests hasAVowel - if the string contains a vowel regardless of case it returns true",
     "FrScTe3": "From Scratch Tests hasCatsOrDogs - if the string contains \"cats\" or \"dogs\" regardless of case it returns true",
@@ -17,11 +42,11 @@
     "FrScTe13": "From Scratch Tests replaceAllNumbers - replaces all the numbers in the string with \"???\"",
     "FrScTe14": "From Scratch Tests fixFileName - replaces all the whitespace in the string with underscores",
     "FrScTe15": "From Scratch Tests nameRedacter - replaces all the words in the string that are 2 or more characters long and all uppercase with \"REDACTED\"",
-    "FrScTe16": "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case"
+    "FrScTe16": "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case",
+    "MoTe1": "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each"
   },
   "testNameToIdHash": {
     "Debug Tests isValidCompanyUsername - correctly checks if an employee has a valid username": "DeTe1",
-    "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1",
     "From Scratch Tests helloWorldRegex - if the string contains \"hello world\" regardless of case it returns true": "FrScTe1",
     "From Scratch Tests hasAVowel - if the string contains a vowel regardless of case it returns true": "FrScTe2",
     "From Scratch Tests hasCatsOrDogs - if the string contains \"cats\" or \"dogs\" regardless of case it returns true": "FrScTe3",
@@ -37,38 +62,13 @@
     "From Scratch Tests replaceAllNumbers - replaces all the numbers in the string with \"???\"": "FrScTe13",
     "From Scratch Tests fixFileName - replaces all the whitespace in the string with underscores": "FrScTe14",
     "From Scratch Tests nameRedacter - replaces all the words in the string that are 2 or more characters long and all uppercase with \"REDACTED\"": "FrScTe15",
-    "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16"
-  },
-  "testScores": {
-    "Debug Tests": {
-      "DeTe1": 0
-    },
-    "Modify Tests": {
-      "MoTe1": 0
-    },
-    "From Scratch Tests": {
-      "FrScTe1": 0,
-      "FrScTe2": 0,
-      "FrScTe3": 0,
-      "FrScTe4": 0,
-      "FrScTe5": 0,
-      "FrScTe6": 0,
-      "FrScTe7": 0,
-      "FrScTe8": 0,
-      "FrScTe9": 0,
-      "FrScTe10": 0,
-      "FrScTe11": 0,
-      "FrScTe12": 0,
-      "FrScTe13": 0,
-      "FrScTe14": 0,
-      "FrScTe15": 0,
-      "FrScTe16": 0
-    }
+    "From Scratch Tests camelCaseToSnakeCase - converts a camelCase string to snake_case": "FrScTe16",
+    "Modify Tests swapAllCases - swaps all letter cases in string using regex properly and toUpper/LowerCase once each": "MoTe1"
   },
   "humanReadable": {
-    "Debug Tests": "0/1",
-    "finalTestScore": "FINAL SCORE: 0/18",
-    "Modify Tests": "0/1",
-    "From Scratch Tests": "0/16"
+    "Debug Tests": "1/1",
+    "finalTestScore": "FINAL SCORE: 18/18",
+    "From Scratch Tests": "16/16",
+    "Modify Tests": "1/1"
   }
 }

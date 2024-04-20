@@ -1,34 +1,70 @@
-const helloWorldRegex = (str) => {};
+const helloWorldRegex = (str) => {
+  return /Hello world/gi.test(str);
+};
+// str.match(/[Hello world]/gi)
+const hasAVowel = (str) => {
+  return /[aeiou]/gi.test(str);
+};
 
-const hasAVowel = (str) => {};
+const hasCatsOrDogs = (str) => {
+  return /cats|dogs/gi.test(str);
+};
 
-const hasCatsOrDogs = (str) => {};
+const hasVowelStart = (str) => {
+  return /^[aeiou]/gi.test(str);
+};
 
-const hasVowelStart = (str) => {};
+const hasPunctuationEnd = (str) => {
+  return /[?!.]$/g.test(str);
+};
 
-const hasPunctuationEnd = (str) => {};
+const hasNothingOrDigits = (str) => {
+  return /^\s*\d*$/gi.test(str);
+};
+// console.log(hasNothingOrDigits('123abc'))
+// console.log(hasNothingOrDigits(''))
+const hasNoFlippers = (str) => {
+  return /^[^BCcDEHIKOoXxl]*$/.test(str);
+};
 
-const hasNothingOrDigits = (str) => {};
+const isValidEmail = (str) => {
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str);
+};
 
-const hasNoFlippers = (str) => {};
+const isValidPhoneNumber = (str) => {
+  return /^[(]?\d{3}[)]?[\s\.-]+\d{3}[\s\.-]+\d{4}$/.test(str);
+};
 
-const isValidEmail = (str) => {};
+const matchAllNumbers = (str) => {
+  return str.match(/[\d]+/g) === null ? [] : str.match(/[\d]+/g);
+};
 
-const isValidPhoneNumber = (str) => {};
+const matchAllNumbersAsNumbers = (str) => {
+  const arrFilter = str.match(/[\d]+/g);
+  if (arrFilter === null) {return []}
+  else {return arrFilter.map((num) => +num)};
+};
 
-const matchAllNumbers = (str) => {};
+const matchAllWords = (str) => {
+  return str.match(/([a-zA-Z][']?)+/g) === null ? [] : str.match(/([a-zA-Z][']?)+/g);
+};
 
-const matchAllNumbersAsNumbers = (str) => {};
+const replaceAllNumbers = (str) => {
+    return str.replaceAll(/[\d]+/g, '???')
+};
 
-const matchAllWords = (str) => {};
+const fixFileName = (str) => {
+  return str.replaceAll(/[\s]+/g, '_')  === null ? [] : str.replaceAll(/[\s]+/g, '_');
+};
 
-const replaceAllNumbers = (str) => {};
+const nameRedacter = (str) => {
+  return str.replaceAll(/\w[A-Z^IA]+/g, 'REDACTED')
+};
 
-const fixFileName = (str) => {};
-
-const nameRedacter = (str) => {};
-
-const camelToSnakeCase = (str) => {};
+const camelToSnakeCase = (str) => {
+  const callback = (letter) => {return `_${letter.toLowerCase()}`}
+  return str.replaceAll(/[A-Z]/g, callback)
+};
 
 module.exports = {
   helloWorldRegex,
