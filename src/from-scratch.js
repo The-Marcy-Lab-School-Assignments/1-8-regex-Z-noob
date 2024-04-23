@@ -1,3 +1,4 @@
+/** FEEDBACK: Just one small bit of feedback, when you use the flag g, you do not need to use .replaceAll().   */
 const helloWorldRegex = (str) => {
   return /Hello world/gi.test(str);
 };
